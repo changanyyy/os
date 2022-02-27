@@ -1,0 +1,602 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>加载真正的操作系统 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="重头戏来了！">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-callouts/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kai-qi-bao-hu-mo-shi.html" />
+    
+    
+    <link rel="prev" href="../xie-yi-ge-zi-ji-de-mbr/fen-xi-yi-xia.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    😀 操作系统lab1【如何启动一个OS】
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/">
+            
+                <a href="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/">
+            
+                    
+                    必备的工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/le-jie-x86-hui-bian-wen-jian.html">
+            
+                <a href="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/le-jie-x86-hui-bian-wen-jian.html">
+            
+                    
+                    了解x86汇编文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2" data-path="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/qemu+gdb.html">
+            
+                <a href="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/qemu+gdb.html">
+            
+                    
+                    QEMU+GDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.3" data-path="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/git-guan-li-xiang-mu.html">
+            
+                <a href="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/git-guan-li-xiang-mu.html">
+            
+                    
+                    Git管理项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/ji-chu-zhi-shi/">
+            
+                <a href="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/ji-chu-zhi-shi/">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/ji-chu-zhi-shi/ji-suan-ji-de-wu-li-di-zhi-kong-jian.html">
+            
+                <a href="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/ji-chu-zhi-shi/ji-suan-ji-de-wu-li-di-zhi-kong-jian.html">
+            
+                    
+                    计算机的物理地址空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/">
+            
+                <a href="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/">
+            
+                    
+                    开机的第一条指令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1" data-path="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/yi-ge-xiao-shi-yan.html">
+            
+                <a href="../../../cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/yi-ge-xiao-shi-yan.html">
+            
+                    
+                    😇 一个小实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2" data-path="../../ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/kai-ji-cheng-gong.html">
+            
+                <a href="../../ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/kai-ji-cheng-gong.html">
+            
+                    
+                    😀 了解BIOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3" data-path="../../ji-chu-zhi-shi/mbr-and-bootloader.html">
+            
+                <a href="../../ji-chu-zhi-shi/mbr-and-bootloader.html">
+            
+                    
+                    MBR & Bootloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4" data-path="../../ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/">
+            
+                <a href="../../ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/">
+            
+                    
+                    IA-32的存储管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.4.1" data-path="../../ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/shi-mo-shi.html">
+            
+                <a href="../../ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/shi-mo-shi.html">
+            
+                    
+                    ☺ 实模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.2" data-path="../../ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/bao-hu-mo-shi.html">
+            
+                <a href="../../ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/bao-hu-mo-shi.html">
+            
+                    
+                    😭 保护模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.3" data-path="../../ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/cong-shi-mo-shi-qie-huan-dao-bao-hu-mo-shi.html">
+            
+                <a href="../../ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/cong-shi-mo-shi-qie-huan-dao-bao-hu-mo-shi.html">
+            
+                    
+                    😀 从实模式切换到保护模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.5" data-path="../../ji-chu-zhi-shi/xian-cun-guan-li.html">
+            
+                <a href="../../ji-chu-zhi-shi/xian-cun-guan-li.html">
+            
+                    
+                    显存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    开始实验
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="../xie-yi-ge-zi-ji-de-mbr/">
+            
+                <a href="../xie-yi-ge-zi-ji-de-mbr/">
+            
+                    
+                    写一个自己的MBR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1.1" data-path="../xie-yi-ge-zi-ji-de-mbr/cao-zuo-yi-bo.html">
+            
+                <a href="../xie-yi-ge-zi-ji-de-mbr/cao-zuo-yi-bo.html">
+            
+                    
+                    🥲 操作一波
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.2" data-path="../xie-yi-ge-zi-ji-de-mbr/fen-xi-yi-xia.html">
+            
+                <a href="../xie-yi-ge-zi-ji-de-mbr/fen-xi-yi-xia.html">
+            
+                    
+                    😀 分析一下
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.3.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    加载真正的操作系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.2.1" data-path="kai-qi-bao-hu-mo-shi.html">
+            
+                <a href="kai-qi-bao-hu-mo-shi.html">
+            
+                    
+                    🧐 开启保护模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.2" data-path="jia-zai-os.html">
+            
+                <a href="jia-zai-os.html">
+            
+                    
+                    🤓 加载“OS”
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >加载真正的操作系统</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x52A0;&#x8F7D;&#x771F;&#x6B63;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;">&#x52A0;&#x8F7D;&#x771F;&#x6B63;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</h1>
+<p>&#x5728;&#x524D;&#x9762;&#x7684;&#x4ECB;&#x7ECD;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x719F;&#x6089;&#x4E86;<code>BIOS</code>&#x548C;<code>MBR</code>&#x3002;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x4F53;&#x9A8C;&#x4E00;&#x4E0B;OS&#x7684;&#x52A0;&#x8F7D;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x672C;&#x90E8;&#x5206;&#x5206;&#x4E3A;&#x4E24;&#x5C0F;&#x8282;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x5C0F;&#x8282;&#x662F;&#x5F00;&#x542F;&#x4FDD;&#x62A4;&#x6A21;&#x5F0F;</li>
+<li>&#x7B2C;&#x4E8C;&#x5C0F;&#x8282;&#x662F;&#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x5FAE;&#x578B;&#x201C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x201D;</li>
+</ul>
+<p>&#x6BCF;&#x5C0F;&#x8282;&#x6309;&#x7167;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x7684;&#x7ED3;&#x6784;&#x5B89;&#x6392;&#xFF1A;</p>
+<ol>
+<li>&#x5B9E;&#x9A8C;&#x4EFB;&#x52A1;&#xFF1A;&#x5177;&#x4F53;&#x8981;&#x6539;&#x54EA;&#x4E9B;&#x5730;&#x65B9;</li>
+<li>&#xFF08;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF09;&#xFF1A;&#x8FDB;&#x884C;&#x672C;&#x8282;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x505A;&#x54EA;&#x4E9B;&#x51C6;&#x5907;</li>
+<li>&#x6846;&#x67B6;&#x7406;&#x89E3;&#xFF1A;&#x5E2E;&#x52A9;&#x7406;&#x89E3;&#x6846;&#x67B6;&#xFF0C;&#x5E76;&#x7ED9;&#x4E88;&#x63D0;&#x793A;</li>
+</ol>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x9ED1;&#x79D1;&#x6280;&#xFF0C;&#x5B9E;&#x9A8C;&#x7ED3;&#x675F;&#x53EF;&#x4EE5;&#x7814;&#x7A76;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<p><a href="https://www.zhihu.com/question/49580321/answer/287557834?ADUIN=1263522794\&amp;ADSESSION=1645021658\&amp;ADTAG=CLIENT.QQ.5845\_.0\&amp;ADPUBNO=27178" target="_blank">C &#x5982;&#x4F55;&#x7F16;&#x8BD1;&#x51FA;&#x4E00;&#x4E2A;&#x4E0D;&#x9700;&#x8981;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x7A0B;&#x5E8F;&#xFF1F; - &#x77E5;&#x4E4E; (zhihu.com)</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../xie-yi-ge-zi-ji-de-mbr/fen-xi-yi-xia.html" class="navigation navigation-prev " aria-label="Previous page: 😀 分析一下">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kai-qi-bao-hu-mo-shi.html" class="navigation navigation-next " aria-label="Next page: 🧐 开启保护模式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"重头戏来了！","title":"加载真正的操作系统","level":"1.1.3.2","depth":3,"next":{"title":"🧐 开启保护模式","level":"1.1.3.2.1","depth":4,"path":"readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/kai-qi-bao-hu-mo-shi.md","ref":"readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/kai-qi-bao-hu-mo-shi.md","articles":[]},"previous":{"title":"😀 分析一下","level":"1.1.3.1.2","depth":4,"path":"readme/kai-shi-shi-yan/xie-yi-ge-zi-ji-de-mbr/fen-xi-yi-xia.md","ref":"readme/kai-shi-shi-yan/xie-yi-ge-zi-ji-de-mbr/fen-xi-yi-xia.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","callouts","intopic-toc"],"pluginsConfig":{"callouts":{},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/README.md","mtime":"2022-02-27T15:55:01.642Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-27T15:55:39.925Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

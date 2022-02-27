@@ -1,0 +1,629 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>QEMU+GDB · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-callouts/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="git-guan-li-xiang-mu.html" />
+    
+    
+    <link rel="prev" href="le-jie-x86-hui-bian-wen-jian.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    😀 操作系统lab1【如何启动一个OS】
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    必备的工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="le-jie-x86-hui-bian-wen-jian.html">
+            
+                <a href="le-jie-x86-hui-bian-wen-jian.html">
+            
+                    
+                    了解x86汇编文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.1.2" data-path="qemu+gdb.html">
+            
+                <a href="qemu+gdb.html">
+            
+                    
+                    QEMU+GDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.3" data-path="git-guan-li-xiang-mu.html">
+            
+                <a href="git-guan-li-xiang-mu.html">
+            
+                    
+                    Git管理项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../ji-chu-zhi-shi/">
+            
+                <a href="../ji-chu-zhi-shi/">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../ji-chu-zhi-shi/ji-suan-ji-de-wu-li-di-zhi-kong-jian.html">
+            
+                <a href="../ji-chu-zhi-shi/ji-suan-ji-de-wu-li-di-zhi-kong-jian.html">
+            
+                    
+                    计算机的物理地址空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="../ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/">
+            
+                <a href="../ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/">
+            
+                    
+                    开机的第一条指令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1" data-path="../ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/yi-ge-xiao-shi-yan.html">
+            
+                <a href="../ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/yi-ge-xiao-shi-yan.html">
+            
+                    
+                    😇 一个小实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2" data-path="../../readme/ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/kai-ji-cheng-gong.html">
+            
+                <a href="../../readme/ji-chu-zhi-shi/kai-ji-de-di-yi-tiao-zhi-ling/kai-ji-cheng-gong.html">
+            
+                    
+                    😀 了解BIOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3" data-path="../../readme/ji-chu-zhi-shi/mbr-and-bootloader.html">
+            
+                <a href="../../readme/ji-chu-zhi-shi/mbr-and-bootloader.html">
+            
+                    
+                    MBR & Bootloader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4" data-path="../../readme/ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/">
+            
+                <a href="../../readme/ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/">
+            
+                    
+                    IA-32的存储管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.4.1" data-path="../../readme/ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/shi-mo-shi.html">
+            
+                <a href="../../readme/ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/shi-mo-shi.html">
+            
+                    
+                    ☺ 实模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.2" data-path="../../readme/ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/bao-hu-mo-shi.html">
+            
+                <a href="../../readme/ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/bao-hu-mo-shi.html">
+            
+                    
+                    😭 保护模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.3" data-path="../../readme/ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/cong-shi-mo-shi-qie-huan-dao-bao-hu-mo-shi.html">
+            
+                <a href="../../readme/ji-chu-zhi-shi/ia32-de-cun-chu-guan-li/cong-shi-mo-shi-qie-huan-dao-bao-hu-mo-shi.html">
+            
+                    
+                    😀 从实模式切换到保护模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.5" data-path="../../readme/ji-chu-zhi-shi/xian-cun-guan-li.html">
+            
+                <a href="../../readme/ji-chu-zhi-shi/xian-cun-guan-li.html">
+            
+                    
+                    显存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../readme/kai-shi-shi-yan/">
+            
+                <a href="../../readme/kai-shi-shi-yan/">
+            
+                    
+                    开始实验
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="../../readme/kai-shi-shi-yan/xie-yi-ge-zi-ji-de-mbr/">
+            
+                <a href="../../readme/kai-shi-shi-yan/xie-yi-ge-zi-ji-de-mbr/">
+            
+                    
+                    写一个自己的MBR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1.1" data-path="../../readme/kai-shi-shi-yan/xie-yi-ge-zi-ji-de-mbr/cao-zuo-yi-bo.html">
+            
+                <a href="../../readme/kai-shi-shi-yan/xie-yi-ge-zi-ji-de-mbr/cao-zuo-yi-bo.html">
+            
+                    
+                    🥲 操作一波
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.2" data-path="../../readme/kai-shi-shi-yan/xie-yi-ge-zi-ji-de-mbr/fen-xi-yi-xia.html">
+            
+                <a href="../../readme/kai-shi-shi-yan/xie-yi-ge-zi-ji-de-mbr/fen-xi-yi-xia.html">
+            
+                    
+                    😀 分析一下
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2" data-path="../../readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/">
+            
+                <a href="../../readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/">
+            
+                    
+                    加载真正的操作系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.2.1" data-path="../../readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/kai-qi-bao-hu-mo-shi.html">
+            
+                <a href="../../readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/kai-qi-bao-hu-mo-shi.html">
+            
+                    
+                    🧐 开启保护模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.2" data-path="../../readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/jia-zai-os.html">
+            
+                <a href="../../readme/kai-shi-shi-yan/jia-zai-zhen-zheng-de-cao-zuo-xi-tong/jia-zai-os.html">
+            
+                    
+                    🤓 加载“OS”
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >QEMU+GDB</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="qemugdb">QEMU+GDB</h1>
+<h2 id="qemu">QEMU</h2>
+<p>&#x6211;&#x4EEC;&#x7684;&#x5B9E;&#x9A8C;&#x8981;&#x7528;&#x5230;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x7684;&#x6A21;&#x62DF;&#x5668;&#xFF0C;&#x53EB;&#x505A;<code>QEMU</code>&#x3002;&#x542C;&#x5230;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x719F;&#x6089;&#xFF1F;&#x6211;&#x4EEC;&#x5728;<code>ICS</code>&#x8BFE;&#x4E0A;&#x5199;&#x8FC7;&#x4E00;&#x4E2A;&#x53EB;<code>NEMU</code>&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6765;&#x6A21;&#x62DF;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x786C;&#x4EF6;&#xFF0C;&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x8BB0;&#x5F97;<code>NEMU</code>&#x91CC;&#x9762;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x53EB;&#x505A;<code>Kernel</code>&#x7684;&#x4E1C;&#x897F;&#x3002;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8BFE;&#x7A0B;&#x7684;&#x5B9E;&#x9A8C;&#x4E2D;&#xFF0C;<code>QEMU</code>&#x548C;<code>NEMU</code>&#x7C7B;&#x4F3C;&#xFF0C;&#x90FD;&#x662F;&#x5B8C;&#x5168;&#x901A;&#x8FC7;&#x8F6F;&#x4EF6;&#x6765;&#x6A21;&#x62DF;&#x786C;&#x4EF6;&#x7684;&#x6267;&#x884C;&#x3002;&#x4F46;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;<code>QEMU</code>&#x8FD9;&#x4E2A;&#x7CFB;&#x7EDF;&#x5341;&#x5206;&#x5E9E;&#x5927;&#xFF0C;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x3002;</p>
+<p>&#x5B9E;&#x9A8C;&#x8FC7;&#x7A0B;&#x4E2D;&#x5199;&#x51FA;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x5B9E;&#x9645;&#x7684;&#x786C;&#x4EF6;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x7535;&#x8111;&#x4E0A;&#x8FD0;&#x884C;&#xFF0C;&#x6709;&#x4EE5;&#x4E0B;&#x4E24;&#x70B9;&#x574F;&#x5904;&#xFF1A;</p>
+<ul>
+<li>&#x6211;&#x4EEC;&#x7CDF;&#x7CD5;&#x7684;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x5728;&#x786C;&#x4EF6;&#x4E0A;&#x53EF;&#x80FD;&#x4F1A;&#x635F;&#x574F;&#x786C;&#x4EF6;</li>
+<li>&#x6CA1;&#x529E;&#x6CD5;&#x8FDB;&#x884C;&#x8C03;&#x8BD5;</li>
+</ul>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528;<code>QEMU</code>&#x6A21;&#x62DF;&#x5668;&#x6765;&#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;<code>GDB</code>&#x6765;&#x8FDB;&#x884C;<code>Debug</code>&#xFF0C;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x5728;&#x4E0B;&#x9762;&#x4F1A;&#x89E3;&#x91CA;&#x3002;</p>
+<h2 id="gdb">GDB</h2>
+<p><code>GDB</code>&#x6211;&#x77E5;&#x9053;&#x5927;&#x5BB6;&#x5B66;&#x8FC7;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x4F30;&#x8BA1;&#x53EA;&#x5B66;&#x8FC7;&#x4E00;&#x4E9B;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x3002;&#x4E0B;&#x9762;&#x6559;&#x7ED9;&#x5927;&#x5BB6;&#x4E00;&#x70B9;&#x9ED1;&#x79D1;&#x6280;&#x3002;&#xFF08;&#x6682;&#x65F6;&#x4E86;&#x89E3;&#x5373;&#x53EF;&#xFF0C;&#x5728;&#x9047;&#x5230;&#x9700;&#x8981;GDB&#x7684;&#x5730;&#x65B9;&#x65F6;&#x518D;&#x56DE;&#x5934;&#x770B;&#xFF09;&#x3002;</p>
+<p>&#x5229;&#x7528;<code>QEMU</code>&#x6A21;&#x62DF;80386&#x5E73;&#x53F0;&#xFF0C;&#x8FD0;&#x884C;&#x81EA;&#x5236;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x955C;&#x50CF;<code>os.img</code></p>
+<pre><code class="lang-shell">$ chmod +x ./utils/genboot.pl  #&#x7ED9;&#x4E88;genboot.pl&#x6743;&#x9650;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x6682;&#x65F6;&#x4E0D;&#x7528;&#x7BA1;&#xFF0C;&#x540E;&#x9762;&#x7AE0;&#x8282;&#x4F1A;&#x89E3;&#x91CA;
+$ make                         #&#x751F;&#x6210;os.img
+$ qemu-system-i386 os.img      #&#x8FD0;&#x884C;os.img
+</code></pre>
+<p>&#x5229;&#x7528;<code>QEMU</code>&#x6A21;&#x62DF;80386&#x5E73;&#x53F0;&#xFF0C;<code>Debug</code>&#x81EA;&#x5236;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x955C;&#x50CF;<code>os.img</code>&#xFF0C;&#x9009;&#x9879; <code>-s</code> &#x5728;<code>TCP</code>&#x7684;1234&#x7AEF;&#x53E3;&#x8FD0;&#x884C;&#x4E00;&#x4E2A; <code>gdbserver</code>&#xFF08;&#x4E0D;&#x7528;&#x61C2;&#xFF0C;&#x53CD;&#x6B63;&#x5C31;&#x662F;<code>QEMU</code>&#x4F1A;&#x628A;&#x5728;&#x5176;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x6267;&#x884C;&#x4FE1;&#x606F;&#x53D1;&#x9001;&#x7ED9;<code>GDB</code>&#xFF09;&#xFF0C;&#x9009;&#x9879; <code>-S</code> &#x4F7F;&#x5F97;<code>QEMU</code>&#x542F;&#x52A8;&#x65F6;&#x4E0D;&#x8FD0;&#x884C;80386&#x7684;<code>CPU</code>&#x3002;</p>
+<pre><code> $ qemu-system-i386 -s -S os.img
+</code></pre><p>&#x518D;&#x53E6;&#x5916;&#x5F00;&#x4E00;&#x4E2A;<code>shell</code>&#xFF0C;&#x542F;&#x52A8;<code>GDB</code>&#xFF0C;&#x8FDE;&#x63A5;&#x4E0A;&#x8FF0;<code>gdbserver</code>&#xFF0C;&#x5728;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;<code>0x7c00</code>&#x5904;&#x6DFB;&#x52A0;&#x65AD;&#x70B9;&#xFF0C;&#x8FD0;&#x884C;80386&#x7684; <code>CPU</code>&#xFF0C;&#x663E;&#x793A;&#x5BC4;&#x5B58;&#x5668;&#x4FE1;&#x606F;&#xFF0C;&#x5355;&#x6B65;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x6761;&#x6307;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-shell"> $ gdb #&#x542F;&#x52A8;gdb 
+ $(gdb) target remote localhost:1234 #gdb&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#x4E0A;gdbserber 
+ ... 
+ $(gdb) b *0x7c00 #&#x6253;&#x65AD;&#x70B9; 
+ $(gdb) c #&#x8FD0;&#x884C; 
+ ... 
+ $(gdb) info registers #&#x67E5;&#x770B;&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x503C; 
+ ... 
+ $(gdb) si #&#x9010;&#x53E5;&#x6267;&#x884C;&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x6B65; 
+ ...
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x8DDF;<code>GDB</code>&#x6709;&#x5173;&#x7684;&#x9ED1;&#x79D1;&#x6280;&#x592A;&#x591A;&#xFF0C;&#x4E3A;&#x4E86;&#x8BA9;&#x6587;&#x6863;&#x4E0D;&#x592A;&#x957F;&#xFF0C;&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x4E00;&#x4E9B;&#x6587;&#x6863;&#xFF0C;&#x4F60;&#x4EEC;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF1A;</p>
+<ul>
+<li><a href="https://blog.csdn.net/k346k346/article/details/50283861" target="_blank">GDB&#x5165;&#x95E8;&#x6559;&#x7A0B;_Dablelv&#x7684;&#x535A;&#x5BA2;&#x4E13;&#x680F;-CSDN&#x535A;&#x5BA2;_gdb&#x83DC;&#x9E1F;&#x6559;&#x7A0B;</a>&#xFF1A;&#x8FD9;&#x91CC;&#x9762;&#x6709;&#x4E00;&#x4E9B;&#x6BD4;&#x8F83;&#x597D;&#x7528;&#x7684;<code>GDB</code>&#x6307;&#x4EE4;&#xFF0C;&#x6BD4;&#x5982;&#x67E5;&#x770B;&#x6E90;&#x7801;&#xFF0C;&#x53CD;&#x6C47;&#x7F16;&#x7B49;&#x7B49;&#xFF0C;&#x8BF7;&#x81EA;&#x884C;&#x67E5;&#x9605;&#x76F8;&#x5173;&#x6307;&#x4EE4;&#x3002;</li>
+<li><a href="https://sourceware.org/gdb/documentation/" target="_blank">GDB Documentation (sourceware.org)</a>&#xFF1A;&#x8FD9;&#x662F;GDB&#x5B98;&#x65B9;&#x7528;&#x6237;&#x624B;&#x518C;&#xFF0C;&#x6709;&#x80FD;&#x529B;&#x7684;&#x4EBA;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x3002;</li>
+</ul>
+<h2 id="&#x8865;&#x5145;">&#x8865;&#x5145;</h2>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x6BD4;&#x8F83;&#x7591;&#x60D1;&#xFF0C;&#x6211;&#x4EEC;&#x662F;&#x600E;&#x4E48;&#x77E5;&#x9053;<code>qemu-system-i386 -s -S os.img</code>&#x8981;&#x7528;&#x8FD9;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>man</code>&#x547D;&#x4EE4;&#x6765;&#x641C;&#x7D22;&#xFF0C;&#x8F93;&#x5165;<code>man qemu-system-i386</code>&#x5C31;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;&#x5230;<code>qemu</code>&#x7684;&#x624B;&#x518C;&#x91CC;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4EFB;&#x4F55;&#x5173;&#x4E8E;<code>qemu</code>&#x7684;&#x77E5;&#x8BC6;&#x3002;&#x8F93;&#x5165;&#x540E;&#xFF0C;&#x9996;&#x5148;&#x8FDB;&#x5165;&#x5230;<code>qemu</code>&#x7684;&#x624B;&#x518C;&#x754C;&#x9762;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x8F93;&#x5165;&#x659C;&#x6760;<code>/</code>&#x52A0;&#x4E0A;&#x5173;&#x952E;&#x8BCD;&#x6765;&#x641C;&#x7D22;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x60F3;&#x8981;&#x7528;<code>gdb</code>&#x8C03;&#x8BD5;<code>qemu</code>&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C31;&#x8F93;&#x5165;<code>/gdb</code>&#xFF0C;&#x6572;&#x56DE;&#x8F66;&#x3002;&#x8FD9;&#x65F6;&#xFF0C;&#x4F1A;&#x663E;&#x793A;&#x6709;<code>gdb</code>&#x7684;&#x5185;&#x5BB9;&#x3002;&#x8F93;&#x5165;<code>n</code>&#x67E5;&#x770B;&#x4E0B;&#x4E00;&#x4E2A;&#xFF0C;&#x8F93;&#x5165;<code>N</code>&#x67E5;&#x770B;&#x4E0A;&#x4E00;&#x4E2A;&#xFF01;&#x7136;&#x540E;&#x4F60;&#x5C31;&#x53D1;&#x73B0;&#x6709;&#x4E00;&#x4E2A;&#x4EC0;&#x4E48;<code>-s</code>&#x53C2;&#x6570;&#x4F1A;&#x5F00;&#x542F;&#x7AEF;&#x53E3;&#x4E3A;1234&#x7684;<code>gdb server</code>&#x3002;&#x5B83;&#x8C03;&#x7528;&#x4E86;<code>-gdb</code>&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x8BA9;<code>qemu</code>&#x7B49;&#x5F85;<code>gdb</code>&#x7684;&#x94FE;&#x63A5;&#x3002;</p>
+<p><img src="../../.gitbook/assets/image1.png" alt="&#x641C;&#x7D22;&quot;gdb&quot;&#x5173;&#x952E;&#x8BCD;"></p>
+<p>&#x8FD9;&#x65F6;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x8FD8;&#x6CA1;&#x7B49;&#x4F60;&#x8FDE;&#x4E0A;<code>gdb</code>&#xFF0C;<code>qemu</code>&#x5C31;&#x628A;&#x4EE3;&#x7801;&#x8DD1;&#x5B8C;&#x4E86;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x6682;&#x65F6;&#x4E0D;&#x8BA9;<code>qemu</code>&#x542F;&#x52A8;&#x7684;&#x9009;&#x9879;&#x3002;&#x641C;&#x7D22;&#x5173;&#x952E;&#x8BCD;<code>start</code>&#xFF0C;&#x53D1;&#x73B0;<code>-S</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x8FD9;&#x70B9;&#x3002;</p>
+<p><img src="../../.gitbook/assets/image2.png" alt="-S"></p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x53C2;&#x6570;&#x627E;&#x5230;&#x4E86;&#xFF0C;&#x5F00;&#x542F;qemu&#xFF0C;&#x518D;&#x6253;&#x5F00;gdb&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#x5373;&#x53EF;&#xFF01;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="le-jie-x86-hui-bian-wen-jian.html" class="navigation navigation-prev " aria-label="Previous page: 了解x86汇编文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="git-guan-li-xiang-mu.html" class="navigation navigation-next " aria-label="Next page: Git管理项目">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"QEMU+GDB","level":"1.1.1.2","depth":3,"next":{"title":"Git管理项目","level":"1.1.1.3","depth":3,"path":"cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/git-guan-li-xiang-mu.md","ref":"cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/git-guan-li-xiang-mu.md","articles":[]},"previous":{"title":"了解x86汇编文件","level":"1.1.1.1","depth":3,"path":"cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/le-jie-x86-hui-bian-wen-jian.md","ref":"cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/le-jie-x86-hui-bian-wen-jian.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","callouts","intopic-toc"],"pluginsConfig":{"callouts":{},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cao-zuo-xi-tong-lab1-ru-he-qi-dong-yi-ge-os/bi-bei-de-gong-ju/qemu+gdb.md","mtime":"2022-02-27T15:55:01.642Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-27T15:55:39.925Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
